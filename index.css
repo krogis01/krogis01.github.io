@@ -4,34 +4,34 @@ body {
 h1 {
    margin-left: auto;
    margin-right: auto;
-   width: 30%;
+   width: 50%;
    padding-top: 10px;
    padding-bottom: 10px;   
    font-size: 40px;
-   font-family: Verdana;
+   font-family: Copperplate, Verdana;
    color: violet;
    font-weight: bold;
    }
 h2 {
    margin-left: auto;
    margin-right: auto;
-   width: 50%;
+   width: 70%;
    padding-top: 10px;
    padding-bottom: 10px;
    font-size: 18px;
-   font-family: Verdana;
+   font-family: Copperplate, Verdana;
    color: gray;
    font-style: italic;
    }
 h3 {
    font-size: 18px;
-   font-famly: Verdana;
+   font-famly: Copperplate, Verdana;
    color: violet;
    font-weight: bold;
    }
 p {
   font-size: 16px;
-  font-family: Verdana;
+  font-family: Copperplate,  Verdana;
   color: white;
   }
 .about {
@@ -39,24 +39,9 @@ p {
        }
 ul {
    font-size: 14px;
-   font-family: Verdana;
+   font-family: Copperplate, Verdana;
    color: white;
    }
-.left {
-      float: left;
-      width: 50%;
-      padding-top: 40px;
-      }
-.right {
-       float: right;
-       width: 50%;
-       padding-top: 40px;
-       }
-/*.header {
-	width: 70%;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	}*/
 img {
     opacity:0.4;
     filter:alpha(opacity=40);
