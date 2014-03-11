@@ -13,7 +13,7 @@ var checkNewPrimes = function () {
     var count = 0;
     var resultFound = false;
     var input = document.getElementById("userinput").value;
-    var end = "<p>The prime factorization of" + input + "is:";
+    var end = "<p>The prime factors of " + input + " are: ";
 
     while(!numberCheck(input)) {
 	while(count < primes.length && !resultFound) {
