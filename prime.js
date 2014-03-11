@@ -13,6 +13,7 @@ var checkNewPrimes = function () {
     var count = 0;
     var resultFound = false;
     var input = document.getElementById("userinput").value;
+    var end = "<p>The prime factorization of" + input + "is:";
 
     while(!numberCheck(input)) {
 	while(count < primes.length && !resultFound) {
@@ -27,7 +28,9 @@ var checkNewPrimes = function () {
 	resultFound = false;
     }
     finalPrimes.push(input);
-    alert(finalPrimes);
+    
+    end += finalPrimes.toString() + "</p>";
+    document.getElementById("end").innerHTML = end;
 }
 
 /*var primesArrayCreator = function () {
