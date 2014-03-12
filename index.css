@@ -19,7 +19,7 @@ div.transbox
   opacity:0.6;
   filter:alpha(opacity=60); /* For IE8 and earlier */
   }
-div.transbox p
+div.transbox h1
   {
   margin-left: auto;
   margin-right: auto;
