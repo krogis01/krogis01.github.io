@@ -42,15 +42,13 @@ ul {
    font-family: Copperplate, Verdana;
    color: white;
    }
-picture {
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-}   
 
 img {
     opacity:0.4;
     filter:alpha(opacity=40);
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
     }
 img:hover {
 	  opacity:1.0;
