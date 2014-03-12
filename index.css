@@ -3,8 +3,6 @@ body {
      }
 div.background
   {
-  margin-left: auto;
-  margin-right: auto;
   width: 50%;
   background: url(http://www.cre8ivespark.com/wp-content/uploads/2012/08/keyboard.jpg);
   width:500px;
@@ -25,7 +23,7 @@ div.transbox p
   {
   margin:30px 40px;
   font-weight:bold;
-  color: violet;
+  color: violet, purple;
   font-family: Copperplate, Verdana;
   font-size: 80px;
   }
@@ -64,9 +62,7 @@ ul {
 img {
     opacity:0.4;
     filter:alpha(opacity=40);
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
+    width: 50%;
     }
 img:hover {
 	  opacity:1.0;
