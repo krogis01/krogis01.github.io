@@ -48,7 +48,7 @@ img {
     filter:alpha(opacity=40);
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 40%;
     }
 img:hover {
 	  opacity:1.0;
