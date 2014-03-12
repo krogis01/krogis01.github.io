@@ -1,22 +1,40 @@
 body {
      background-color: #C0C0C0;
      }
-h1 {
-   margin-left: auto;
-   margin-right: auto;
-   width: 50%;
-   padding-top: 10px;
-   padding-bottom: 10px;   
-   font-size: 80px;
-   font-family: Copperplate, Verdana;
-   color: violet;
-   font-weight: bold;
-   }
+div.background
+  {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;	
+  width:500px;
+  height:250px;
+  background:url(imgres.jpg);
+  border:4px solid black;
+  }
+div.transbox
+  {
+  width:400px;
+  height:180px;
+  margin:30px 50px;
+  background-color:#ffffff;
+  border:2px solid black;
+  opacity:0.6;
+  filter:alpha(opacity=60); /* For IE8 and earlier */
+  }
+div.transbox p
+  {
+  margin:30px 40px;
+  font-weight:bold;
+  color: violet;
+  font-family: Copperplate, Verdana;
+  font-size: 80px;
+  }
+
 h2 {
    margin-left: auto;
    margin-right: auto;
    width: 70%;
-   padding-top: 30px;
+   padding-top: 10px;
    padding-bottom: 10px;
    font-size: 18px;
    font-family: Copperplate, Verdana;
