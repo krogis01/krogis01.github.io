@@ -6,7 +6,7 @@ div.background
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  background: <img src="http://www.cre8ivespark.com/wp-content/uploads/2012/08/keyboard.jpg" width=500px height=250px/>;
+  background: url(http://www.cre8ivespark.com/wp-content/uploads/2012/08/keyboard.jpg);
   width:500px;
   height:250px;
   border:4px solid black;
