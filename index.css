@@ -3,7 +3,7 @@ body {
      }
 div.background
   {
-  padding-top:10px;
+  padding-top:15px;
   width: 50%;
   background: url(http://www.cre8ivespark.com/wp-content/uploads/2012/08/keyboard.jpg);
   width:500px;
@@ -59,7 +59,7 @@ ul {
    }
 
 img {
-    padding-top:10px;
+    padding-top:15px;
     opacity:0.4;
     filter:alpha(opacity=40);
     width: 50%;
