@@ -69,7 +69,7 @@ var Queue = function() {
 }
 
 var Set = function () {
-	var setList = new [];
+	var setList = [];
 
 	this.add = function() {
 		this.addSet.push(item);
