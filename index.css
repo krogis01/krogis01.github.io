@@ -61,7 +61,7 @@ img {
     border:4px solid black;
     opacity:0.4;
     filter:alpha(opacity=40);
-    width: 50%;
+    width: 100%;
     }
 img:hover {
 	  opacity:1.0;
