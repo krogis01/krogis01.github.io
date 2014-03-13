@@ -1,5 +1,5 @@
 var Stack = function () {
-	var stackList = new [];
+	var stackList = [];
 
 	this.push = function(item) {
 		this.stackList.push(item)
