@@ -42,7 +42,7 @@ var Stack = function () {
 }
 
 var Queue = function() {
-	var queueList = new [];
+	var queueList = [];
 
 	this.enqueue = function() {
 		this.queueList.push(item);
