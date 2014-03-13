@@ -1,5 +1,5 @@
 var Stack = function () {
-	var stackList = [];
+	var stackList = new [];
 
 	this.push = function(item) {
 		this.stackList.push(item)
@@ -42,7 +42,7 @@ var Stack = function () {
 }
 
 var Queue = function() {
-	var queueList = [];
+	var queueList = new [];
 
 	this.enqueue = function() {
 		this.queueList.push(item);
@@ -69,7 +69,7 @@ var Queue = function() {
 }
 
 var Set = function () {
-	var setList = [];
+	var setList = new [];
 
 	this.add = function() {
 		this.addSet.push(item);
@@ -88,7 +88,7 @@ var Set = function () {
 }
 
 var getOneDifferents = function(word, wList) {
-	var oneDifferents = [];
+	var oneDifferents = new [];
 
 	for (var i = 0; i < wList.length; i++) {
 		var sameCh = 0;
