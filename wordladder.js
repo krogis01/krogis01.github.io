@@ -92,7 +92,7 @@ var Set = function () {
 var getOneDifferents = function(word, wList) {
 	var oneDifferents = new Array();
 
-	console.log(word.lenth);
+	console.log(word.length);
 	console.log(word[1]);
 
 	for (var i = 0; i < wList.length; i++) {
