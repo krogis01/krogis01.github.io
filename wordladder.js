@@ -173,7 +173,7 @@ wordLadder = function() {
 	if (!found) {
 		alert("No matches can be found!");
 	} else {
-		var printList = new finalList.reverse();
+		var printList = new finalList;
 		alert(printList);
 	}
 
