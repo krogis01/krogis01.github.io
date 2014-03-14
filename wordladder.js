@@ -93,7 +93,7 @@ var getOneDifferents = function(word, wList) {
 	for (var i = 0; i < wList.length; i++) {
 		var sameCh = 0;
 		for (var j = 0; j < wList[i].length; j++) {
-			if (wList[i][j] = word[j]) {
+			if (wList[i] = word[j]) {
 				sameCh += 1;
 			}
 		}
@@ -108,7 +108,7 @@ wordLadder = function() {
 
 	var beginWord = document.getElementById("userBeginWord").value;
 	var endWord = document.getElementById("userEndWord").value;
-	var wordLength = document.getElementById("dropdown").value;
+	var wordLength = document.getElementById("dropdown");
 	var wordLenVal = wordLength.options[wordLength.selectedIndex].value;
 
 
