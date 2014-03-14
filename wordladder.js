@@ -6,7 +6,7 @@ var Stack = function () {
 		return;
 	}
 
-	this.popOff = function() {
+	this.popOff = function(item) {
 		return stackList.pop();
 	}
 
@@ -31,7 +31,7 @@ var Stack = function () {
 		var newStack = new Stack();
 		
 		for (var i = 0; i < newList.length; i++) {
-			newStack.push(newList[i]);
+			newStack.pushOnto(newList[i]);
 		}
 		
 		return newStack;
@@ -72,15 +72,15 @@ var Queue = function() {
 var Set = function () {
 	var setList = new Array();
 
-	this.add = function(item) {
+	this.addSet = function(item) {
 		setList.push(item);
 		return;
 	}
 
-	this.contains = function(item) {
+	this.checkSet = function(item) {
 		var found = false;
 		
-		for (var i = 0; i < setList.length; i++) {
+		for (var i = 0; i < this.setList.length; i++) {
 			if (setList[i] == item) {
 				found = true;
 			}
@@ -121,7 +121,7 @@ var wordLadder = function() {
 	if(wordLenVal == 3) {
 		var useList = threeLetterWords
 	} else if (wordLenVal ==4) {
-			var useList = fourLetterWords
+		var useList = fourLetterWords
 	} else {
 		var useList = fiveLetterWords
 	}
@@ -132,7 +132,7 @@ var wordLadder = function() {
 	stack.pushOnto(beginWord);
 	queue.enqueue(stack);
 	usedWords = new Set();
-	usedWords.add(beginWord);
+	usedWords.addSet(beginWord);
 
 	var done = false;
 	var found = false;
@@ -153,7 +153,7 @@ var wordLadder = function() {
 			}
 
 			if (!nextUsed) {
-				usedWords.add(nextWords[i]);
+				usedWords.addSet(nextWords[i]);
 				var newStack = currentStack.clone();
 				newStack.pushOnto(nextWords[i]);
 
