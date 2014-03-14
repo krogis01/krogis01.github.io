@@ -1,13 +1,13 @@
 var Stack = function () {
 	var stackList = new Array();
 
-	pushOnto = function(item) {
-		stackList.push(item)
+	pushOnto = function() {
+		stackList.push()
 		return;
 	}
 
-	pop = function(item) {
-		return stackList.push(item);
+	pop = function() {
+		return stackList.pop();
 	}
 
 	peek = function() {
