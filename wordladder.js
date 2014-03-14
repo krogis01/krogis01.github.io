@@ -123,7 +123,7 @@ wordLadder = function() {
 	var queue = new Queue();
 	var stack = new Stack();
 
-	stack.pushOnto(beginWord);
+	stack.push(beginWord);
 	enqueue.enqueue(stack);
 	usedWords = new Set();
 	usedWords.add(beginWord);
