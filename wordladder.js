@@ -1,20 +1,20 @@
 var Stack = function () {
 	var stackList = new Array();
 
-	pushOnto = function(item) {
+	this.pushOnto = function(item) {
 		stackList.push(item)
 		return;
 	}
 
-	pop = function() {
+	this.popOff = function() {
 		return stackList.pop();
 	}
 
-	peek = function() {
+	this.peek = function() {
 		return stackList[stackList.length-1]
 	}
 
-	isEmpty = function() {
+	this.isEmpty = function() {
 		if (stackList.length == 0) {
 			return true;
 		} else {
@@ -22,21 +22,22 @@ var Stack = function () {
 		}
 	}
 
-	size = function() {
+	this.size = function() {
 		return stackList.length;
 	}
 
-	clone = function() {
-		var newList = new stackList.slice(0);
+	this.clone = function() {
+		var newList = stackList.slice(0);
 		var newStack = new Stack();
 		
 		for (var i = 0; i < newList.length; i++) {
 			newStack.push(newList[i]);
 		}
+		
 		return newStack;
 	}
 
-	show = function() {
+	this.show = function() {
 		return stackList;
 	}
 }
@@ -44,17 +45,17 @@ var Stack = function () {
 var Queue = function() {
 	var queueList = new Array();
 
-	enqueue = function() {
+	this.enqueue = function(item) {
 		queueList.push(item);
 		return;
 	}
 
-	dequeue = function() {
+	this.dequeue = function() {
 		var removed = new queueList.splice(0, 1);
-		return(removed[0]);
+		return removed[0];
 	}
 
-	isEmpty = function() {
+	this.isEmpty = function() {
 		if (queueList.length == 0) {
 			return true;
 		} else {
@@ -62,7 +63,7 @@ var Queue = function() {
 		}
 	}
 
-	size = function() {
+	this.size = function() {
 		return queueList.length;
 	}
 
@@ -71,15 +72,16 @@ var Queue = function() {
 var Set = function () {
 	var setList = new Array();
 
-	add = function() {
-		addSet.push(item);
+	this.add = function(item) {
+		setList.push(item);
 		return;
 	}
 
-	contains = function() {
+	this.contains = function(item) {
 		var found = false;
-		for (var i = 0; i = setList.length; i++) {
-			if (setList[i] = item) {
+		
+		for (var i = 0; i < setList.length; i++) {
+			if (setList[i] == item) {
 				found = true;
 			}
 		}
@@ -90,10 +92,13 @@ var Set = function () {
 var getOneDifferents = function(word, wList) {
 	var oneDifferents = new Array();
 
+	console.log(word.lenth);
+	console.log(word[1]);
+
 	for (var i = 0; i < wList.length; i++) {
 		var sameCh = 0;
 		for (var j = 0; j < wList[i].length; j++) {
-			if (wList[i] = word[j]) {
+			if (wList[i][j] = word[j]) {
 				sameCh += 1;
 			}
 		}
@@ -101,10 +106,11 @@ var getOneDifferents = function(word, wList) {
 			oneDifferents.push(wList[i]);
 		}
 	}
+	console.log(oneDifferents);
 	return oneDifferents;
 }
 
-wordLadder = function() {
+var wordLadder = function() {
 
 	var beginWord = document.getElementById("userBeginWord").value;
 	var endWord = document.getElementById("userEndWord").value;
@@ -124,7 +130,7 @@ wordLadder = function() {
 	var stack = new Stack();
 
 	stack.pushOnto(beginWord);
-	enqueue.enqueue(stack);
+	queue.enqueue(stack);
 	usedWords = new Set();
 	usedWords.add(beginWord);
 
@@ -132,9 +138,9 @@ wordLadder = function() {
 	var found = false;
 
 	while (!done) {
-		var currentStack = new queue.dequeue();
-		var topWord = new currentStack.peek();
-		var nextWords = new getOneDifferents(topWord, useList);
+		var currentStack = queue.dequeue();
+		var topWord = currentStack.peek();
+		var nextWords = getOneDifferents(topWord, useList);
 
 		for (var i = 0; i < nextWords.length; i++) {
 			var nextUsed = false;
@@ -148,7 +154,7 @@ wordLadder = function() {
 
 			if (!nextUsed) {
 				usedWords.add(nextWords[i]);
-				var newStack = new currentStack.clone();
+				var newStack = currentStack.clone();
 				newStack.pushOnto(nextWords[i]);
 
 				if (nextWords[i] == endWord) {
@@ -173,8 +179,11 @@ wordLadder = function() {
 	if (!found) {
 		alert("No matches can be found!");
 	} else {
-		var printList = new finalList;
-		alert(printList);
+		var finalString = "";
+		for (var i = 0; i < finalList.length; i++) {
+			finalString += "<p>" + finalList[i] + "</p>";
+		}
+	document.getElementById("results").innerHTML = finalString;
 	}
 
 	return;
