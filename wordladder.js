@@ -98,7 +98,7 @@ var getOneDifferents = function(word, wList) {
 			}
 		}
 		if (sameCh == word.length - 1) {
-			oneDifferents.append(wList[i]);
+			oneDifferents.push(wList[i]);
 		}
 	}
 	return oneDifferents;
