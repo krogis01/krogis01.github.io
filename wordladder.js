@@ -1,8 +1,8 @@
 var Stack = function () {
 	var stackList = new Array();
 
-	pushOnto = function() {
-		stackList.push()
+	pushOnto = function(item) {
+		stackList.push(item)
 		return;
 	}
 
