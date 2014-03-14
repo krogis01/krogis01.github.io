@@ -1,7 +1,7 @@
 var Stack = function () {
 	var stackList = new Array();
 
-	push = function(item) {
+	pushOnto = function(item) {
 		stackList.push(item)
 		return;
 	}
@@ -123,7 +123,7 @@ wordLadder = function() {
 	var queue = new Queue();
 	var stack = new Stack();
 
-	stack.push(beginWord);
+	stack.pushOnto(beginWord);
 	enqueue.enqueue(stack);
 	usedWords = new Set();
 	usedWords.add(beginWord);
@@ -149,7 +149,7 @@ wordLadder = function() {
 			if (!nextUsed) {
 				usedWords.add(nextWords[i]);
 				var newStack = new currentStack.clone();
-				newStack.push(nextWords[i]);
+				newStack.pushOnto(nextWords[i]);
 
 				if (nextWords[i] == endWord) {
 					done = true;
