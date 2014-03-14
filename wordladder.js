@@ -106,10 +106,10 @@ var getOneDifferents = function(word, wList) {
 
 wordLadder = function() {
 
-	var beginWord = document.getElementById("userBeginWord")
-	var endWord = document.getElementById("userEndWord")
-	var wordLength = document.getElementById("dropdown")
-	var wordLenVal = wordLength.options[wordLength.selectedIndex].value
+	var beginWord = document.getElementById("userBeginWord").value;
+	var endWord = document.getElementById("userEndWord").value;
+	var wordLength = document.getElementById("dropdown").value;
+	var wordLenVal = wordLength.options[wordLength.selectedIndex].value;
 
 
 	if(wordLenVal == 3) {
