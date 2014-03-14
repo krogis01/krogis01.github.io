@@ -1,33 +1,33 @@
 var Stack = function () {
 	var stackList = new Array();
 
-	this.push = function(item) {
-		this.stackList.push(item)
+	push = function(item) {
+		stackList.push(item)
 		return;
 	}
 
-	this.pop = function(item) {
-		return this.stackList.push(item);
+	pop = function(item) {
+		return stackList.push(item);
 	}
 
-	this.peek = function() {
-		return this.stackList[this.stackList.length-1]
+	peek = function() {
+		return stackList[stackList.length-1]
 	}
 
-	this.isEmpty = function() {
-		if (this.stackList.length == 0) {
+	isEmpty = function() {
+		if (stackList.length == 0) {
 			return true;
 		} else {
 			return false;
 		}
 	}
 
-	this.size = function() {
-		return this.stackList.length;
+	size = function() {
+		return stackList.length;
 	}
 
-	this.clone = function() {
-		var newList = new this.stackList.slice(0);
+	clone = function() {
+		var newList = new stackList.slice(0);
 		var newStack = new Stack();
 		
 		for (var i = 0; i < newList.length; i++) {
@@ -36,34 +36,34 @@ var Stack = function () {
 		return newStack;
 	}
 
-	this.show = function() {
-		return this.stackList;
+	show = function() {
+		return stackList;
 	}
 }
 
 var Queue = function() {
 	var queueList = new Array();
 
-	this.enqueue = function() {
-		this.queueList.push(item);
+	enqueue = function() {
+		queueList.push(item);
 		return;
 	}
 
-	this.dequeue = function() {
-		var removed = new this.queueList.splice(0, 1);
+	dequeue = function() {
+		var removed = new queueList.splice(0, 1);
 		return(removed[0]);
 	}
 
-	this.isEmpty = function() {
-		if (this.queueList.length == 0) {
+	isEmpty = function() {
+		if (queueList.length == 0) {
 			return true;
 		} else {
 			return false;
 		}
 	}
 
-	this.size = function() {
-		return this.queueList.length;
+	size = function() {
+		return queueList.length;
 	}
 
 }
@@ -71,15 +71,15 @@ var Queue = function() {
 var Set = function () {
 	var setList = new Array();
 
-	this.add = function() {
-		this.addSet.push(item);
+	add = function() {
+		addSet.push(item);
 		return;
 	}
 
-	this.contains = function() {
+	contains = function() {
 		var found = false;
-		for (var i = 0; i = this.setList.length; i++) {
-			if (this.setList[i] = item) {
+		for (var i = 0; i = setList.length; i++) {
+			if (setList[i] = item) {
 				found = true;
 			}
 		}
