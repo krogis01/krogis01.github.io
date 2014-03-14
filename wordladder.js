@@ -92,9 +92,6 @@ var Set = function () {
 var getOneDifferents = function(word, wList) {
 	var oneDifferents = new Array();
 
-	console.log(word.length);
-	console.log(word[1]);
-
 	for (var i = 0; i < wList.length; i++) {
 		var sameCh = 0;
 		for (var j = 0; j < wList[i].length; j++) {
@@ -119,11 +116,11 @@ var wordLadder = function() {
 
 
 	if(wordLenVal == 3) {
-		var useList = threeLetterWords
-	} else if (wordLenVal ==4) {
-		var useList = fourLetterWords
+		var useList = threeLetterWords;
+	} else if (wordLenVal == 4) {
+		var useList = fourLetterWords;
 	} else {
-		var useList = fiveLetterWords
+		var useList = fiveLetterWords;
 	}
 
 	var queue = new Queue();
