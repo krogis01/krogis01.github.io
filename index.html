@@ -1,101 +1,785 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>THE HTMelle</title>
-
-    <!-- Bootstrap 
-    <link href="css/bootstrap.min.css" rel="stylesheet"> -->
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="index.css" type="text/css" title charset="utf-8">
-
-
-<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="1265">
-  <link rel="stylesheet" type="text/css"  href="index.css"/>
-  <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAADoossAx06UAIceWwADAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMxEREzMzMzMzIRERMzMzMzIhEREzMzMzMiIRERMzMzMiIjEREzMzMyIjMxERMzMzIjMzEQAzMzMAAAAAADMzMzAAAAADMzMzMwAAADMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
+  <title>The HTMelle</title>
+
+  <!-- CSS -->
+  <!-- Bootstrap core CSS -->
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+  <!-- Owl Carousel -->
+  <link href="assets/css/owl.theme.css" rel="stylesheet">
+  <link href="assets/css/owl.carousel.css" rel="stylesheet">
+
+  <!-- Magnific-popup lightbox -->
+  <link href="assets/css/magnific-popup.css" rel="stylesheet">
+
+  <!-- Simple text rotator -->
+  <link href="assets/css/simpletextrotator.css" rel="stylesheet">
+
+  <!-- Font Awesome CSS -->
+  <link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+
+  <!-- Animate css -->
+  <link href="assets/css/animate.css" rel="stylesheet">
+
+  <!-- Custom styles CSS -->
+  <link href="assets/css/style.css" rel="stylesheet" media="screen">
 </head>
-  <body>
-      
-     <!--  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Project name</a>
-          </div>
-          <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
+<body>
+
+  <div class="wrapper">
+
+    <!-- Preloader -->
+
+    <div id="preloader">
+      <div id="status">
+        <div class="status-mes"><h4>Isabelle Krogh</h4></div>
       </div>
+    </div>
 
-<div class="container">
+    <!-- Navigation start -->
 
-<div class="header1 col-xs-6 col-md-6">
-<div class="background">
-<div class="transbox">
-<h1 style="color:violet;font-family:Copperplate,Verdana;font-weight:bold;font-size:60px"/>THE HTMelle</h1>
-</div></div></div>
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="container">
 
-<div class="picture col-xs-12 col-sm-6 col-md-6">
-<img src="https://pbs.twimg.com/profile_images/378800000606099613/11a6c2268add277d9847ec0f21cef271.jpeg"/></div>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Isabelle Krogh</a>
+        </div>
 
-<div class="header2 col-xs-12 col-md-12">       
-<h2> ...a woman's epiphanies, explorations, insights, and discoveries as a future innovator in the world of computer science...</h2></div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#intro">Home</a></li>
+            <li><a href="#profile">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
 
-<div class="about col-xs-12 col-sm-6 col-md-6">
-<h3>ABOUT THE 'ELLE'</h3>
-<p>Hello, World! My name is Elle Krogh and I am a current computer science student at Luther College in Decorah, IA. I want to see what opportunities women in my field have in the 'real world', and how what I'm studying now feeds into the workforce. Follow along on my journey into this exciting and constantly expanding field to see what opportunities are available to those with tenacity, creativity, and big ideas on my blog <a href="http://thehtmelle.wordpress.com/">here!</a></p>
+      </div>
+    </nav>
 
-<p>You can also follow me on <a href="https://twitter.com/theHTMelle">Twitter</a> and check out my <a href="http://www.linkedin.com/in/isabellekrogh/">LinkedIn profile</a> for more about me!</p>
+    <!-- Navigation end -->
 
-<p>Stay tuned!</p>
+    <!-- Intro section start -->
 
-<p>'It is our choices that show who we truly are, far more than our abilities.  -Albus Dumbledore</p></div>
+    <section id="intro" class="section">
 
-<div class="gallup col-xs-12 col-sm-6  col-md-6">
-<p><div class="prof">GALLUP/STRENGTHS PROFILE:</div>
-<ul>
-  <li>Restorative</li>
-  <li>Consistency</li>
-  <li>Relator</li>
-  <li>Harmonty</li>
-  <li>Adaptability</li>
-</ul>
-</p>
+      <div class="container">
 
-<p><div class="prof">CS365 ASSIGNMENTS:</div>
-<ul>
-  <li> <a href="prime.html">Prime Factorizations</a></li>
-  <li> <a href="wordladder.html">Word Ladder</a></li>
-  <li> <a href="https://midmash.github.io/">Midterm Mashup</a></li>
-  <li> <a href="http://skillsconnect.herokuapp.com/">Final Project</a></li>
-</ul>
-</p>
+        <div class="row">
 
-      </div><!-- /.container -->
+          <div class="col-md-12">
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed 
-    <script src="js/bootstrap.min.js"></script> -->
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-  </body>
+            <div class="hello wow bounceInDown">
+              <h1>Hello, I'm Isabelle Krogh</h1>
+              <h3><span class="rotate">The HTMelle. | Front-end Developer. | Internet Programmer.</span></h3>
+            </div>
+
+            <a href="#profile">
+              <div class="mouse-icon">
+                <div class="wheel"></div>
+              </div>
+            </a>
+
+          </div>
+
+        </div><!-- .row -->
+
+      </div><!-- .container -->
+
+    </section>
+
+    <!-- Intro section end -->
+
+    <!-- Profile contact callout section -->
+
+    <section id="profile-contact">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-sm-4 wow bounceInLeft">
+            <div class="profile-item">
+              <i class="fa fa-envelope-o"></i>
+              <h5><a href="#">krogis01@luther.edu</a></h5>
+            </div>
+          </div>
+
+          <div class="col-sm-4 wow bounceInUp">
+            <div class="profile-item">
+              <i class="fa fa-phone"></i>
+              <h5>(515) 401-7985</h5>
+            </div>
+          </div>
+
+          <div class="col-sm-4 wow bounceInRight">
+            <div class="profile-item">
+              <i class="fa fa-map-marker"></i>
+              <h5>700 College Dr SPO 1137, Decorah, IA 52101</h5>
+            </div>
+          </div>
+
+        </div><!-- .row -->
+
+      </div><!-- .container -->
+
+    </section>
+
+    <!-- Profile contact callout section -->
+
+    <!-- Profile section start -->
+
+    <section id="profile" class="section">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-12 headline wow bounceInDown">
+            <h2>Isabelle Krogh</h2>
+            <p>The HTMelle. Front-end Developer. Internet Programmer.</p>
+          </div>
+
+          <div class="col-md-3 col-sm-6 hidden-xs wow bounceInLeft">
+            <img class="avatar" src="assets/images/photo.jpg" alt="">
+          </div>
+
+          <div class="col-md-3 col-sm-6 wow bounceInUp">
+
+            <div class="profile-widget">
+              <h3>Skillset</h3>
+
+              <h5>HTML / CSS</h5>
+              <div class="skill-bar">
+                <div class="skill-rate-on"></div>
+                <div class="skill-rate-on"></div>
+                <div class="skill-rate-on"></div>
+                <div class="skill-rate-on"></div>
+              </div>
+
+              <h5>Javascript</h5>
+              <div class="skill-bar">
+                <div class="skill-rate-on"></div>
+                <div class="skill-rate-on"></div>
+                <div class="skill-rate-on"></div>
+                <div class="skill-rate-off"></div>
+              </div>
+
+              <h5>Communication Skills</h5>
+              <div class="skill-bar">
+                <div class="skill-rate-on"></div>
+                <div class="skill-rate-on"></div>
+                <div class="skill-rate-on"></div>
+                <div class="skill-rate-on"></div>
+              </div>
+
+              <h5>Proven Team Leader</h5>
+              <div class="skill-bar">
+                <div class="skill-rate-on"></div>
+                <div class="skill-rate-on"></div>
+                <div class="skill-rate-on"></div>
+                <div class="skill-rate-on"></div>
+              </div>
+            </div>
+
+            <div class="profile-widget">
+              <h3>Social Profiles</h3>
+              <ul class="widget-social">
+                <li><a href="www.linkedin.com/in/isabellekrogh/"><i class="fa fa-linkedin"></i></a></li>
+                
+                <li><a href="https://www.facebook.com/elle.krogh"><i class="fa fa-facebook fa-fw"></i></a></li>
+                
+                <li><a href="https://twitter.com/theHTMelle"><i class="fa fa-twitter"></i></a></li>
+                
+                <li><a href="http://thehtmelle.wordpress.com/"><i class="fa fa-wordpress"></i></a></li>
+              </ul>
+            </div>
+
+          </div><!-- .col-md-3 -->
+
+          <div class="col-md-6 col-sm-12 wow bounceInRight">
+            <h3>About the 'elle'</h3>
+            <p>Hello, World! My name is Isabelle Krogh and I am a current computer science student at Luther College in Decorah, IA. I want to see what opportunities women in my field have in the 'real world', and how what I'm studying now feeds into the workforce. I love internet programming and creating fresh, responsive websites for clients. Follow along on my journey into this exciting and constantly expanding field to see what opportunities are available to those with tenacity, creativity, and big ideas. Stay tuned!</p>
+
+            <p>'It is our choices that show who we truly are, far more than our abilities.' -Albus Dumbledore</p>
+            
+            <p>GALLUP/STRENGTHS PROFILE:
+            </br>
+            Restorative | Consistency | Relator | Harmonty | Adaptability</p>
+
+          </div>
+
+        </div><!-- .row -->
+
+      </div><!-- .container -->
+
+    </section>
+
+    <!-- Profile section end -->
+
+    <!-- Callout section start -->
+
+    <section id="stats" class="callout">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-3 col-sm-12 hidden-xs wow bounceInLeft">
+            <h3>My College Stats</h3>
+          </div>
+
+
+          <div class="col-md-3 col-sm-4 wow bounceInDown">
+            <div class="stat">
+              <div class="stat-icon">
+                <h2><i class="fa fa-gamepad hidden-xs"></i><span class="timer" data-to="27"></span></h2>
+              </div>
+              <h3>Games played</h3>
+            </div>
+          </div>
+
+
+          <div class="col-md-3 col-sm-4 wow bounceInUp">
+            <div class="stat">
+              <div class="stat-icon">
+                <h2><i class="fa fa-book hidden-xs"></i><span class="timer" data-to="33"></span></h2>
+              </div>
+              <h3>Classes taken</h3>
+            </div>
+          </div>
+
+
+          <div class="col-md-3 col-sm-4 wow bounceInUp">
+            <div class="stat">
+              <div class="stat-icon">
+                <h2><i class="fa fa-code hidden-xs"></i><span class="timer" data-to="999"></span></h2>
+              </div>
+              <h3>Lines of code</h3>
+            </div>
+          </div>
+
+
+        </div><!-- .row -->
+
+      </div><!-- .container -->
+
+    </section>
+
+    <!-- Callout section end -->
+
+    <!-- Services section start -->
+
+    <section id="services" class="section">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-12 headline wow bounceInDown">
+            <h2>Who I am</h2>
+            <p>My traits and expertise.</p>
+          </div>
+
+          <div class="col-md-12">
+
+            <div class="row">
+
+              <div class="col-sm-4 wow bounceInLeft">
+                <div class="service">
+                  <div class="icon">
+                    <i class="fa fa-group"></i>
+                  </div>
+                  <h4>Proven Leader</h4>
+                  <div class="text">
+                    <p>I am a leader and can guide and direct groups or organizations to accomplish greatness. I have proven this through leadership positions in multiple extracurricular activities.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4 wow bounceInUp">
+                <div class="service">
+                  <div class="icon">
+                    <i class="fa fa-image"></i>
+                  </div>
+                  <h4>Visionary Communicator</h4>
+                  <div class="text">
+                    <p>I am a woman who not only envisions innovative ideas but can also communicate these ideas to others.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4 wow bounceInRight">
+                <div class="service">
+                  <div class="icon">
+                    <i class="fa fa-language"></i>
+                  </div>
+                  <h4>Language Lover</h4>
+                  <div class="text">
+                    <p>I love language. Although my native language is English, I have studied Spanish and Chinese and can communicate in both.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div><!-- .row -->
+
+            <div class="row">
+
+              <div class="col-sm-4 wow bounceInUp" data-wow-delay=".2s">
+                <div class="service">
+                  <div class="icon">
+                    <i class="fa fa-code"></i>
+                  </div>
+                  <h4>Clean Code</h4>
+                  <div class="text">
+                    <p>I create websites by writing clean code that works with comments to be easily deciphered.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4 wow bounceInUp" data-wow-delay=".4s">
+                <div class="service">
+                  <div class="icon">
+                    <i class="fa fa-desktop"></i>
+                  </div>
+                  <h4>Responsive Design</h4>
+                  <div class="text">
+                    <p>I create beautifully responsive websites for a great customer experience on all consoles and devices.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4 wow bounceInUp" data-wow-delay=".6s">
+                <div class="service">
+                  <div class="icon">
+                    <i class="fa fa-futbol-o"></i>
+                  </div>
+                  <h4>Team Player</h4>
+                  <div class="text">
+                    <p>I collaborate with others to create the best possible product for the end user.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div><!-- .row -->
+
+          </div><!-- .col-md-12 -->
+
+        </div><!-- .row -->
+
+      </div><!-- .container -->
+
+    </section>
+
+    <!-- Services section end -->
+
+    <!-- Callout section start -->
+
+    <section class="callout">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-3 hidden-xs wow bounceInLeft">
+            <h3>My status</h3>
+          </div>
+
+          <div class="col-md-9 headline nomargin wow bounceInDown">
+            <h3>I'm looking for a front-end internet programming position.</h3>
+            <p>If you or a company you know are hiring, please contact me by clicking the button and using the form below. I look forward to meeting with you!</p>
+
+            <h3>I'm currently available for freelance work.</h3>
+            <p>I would be more than happy to hear about your website ideas and needs. Please contact me for a conversation; I want to help!</p>
+            <a href="#contact" class="btn btn-default btn-custom-2 callout-btn"><i class="fa fa-paper-plane-o icon-before"></i> Contact Me</a>
+          </div>
+
+        </div><!-- .row -->
+
+      </div><!-- .container -->
+
+    </section>
+
+    <!-- Callout section end -->
+
+    <!-- Resume section start -->
+
+    <section id="resume" class="section">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-12 headline wow bounceInDown">
+            <h2>Resume</h2>
+            <p>My education and experience.</p>
+          </div>
+
+        </div><!-- .row -->
+
+        <div class="row resume-items">
+
+          <div class="col-md-3 wow bounceInLeft">
+            <h3>Education</h3>
+          </div>
+
+          <div class="col-md-6 col-sm-8 resume-item wow bounceInUp">
+            <h4>Bachelor of Arts | Computer Science</h4>
+            
+            <h4>Academic Awards</h4>
+            <p>Regent Scholarship, American Legion Merit Award, Weston Noble Music Scholarship, Margaret Jordan Music Scholarship, IWGA Anne Griffel Golf Scholarship</p>
+
+            <h4>Activities and Honors</h4>
+            <p>Varsity Golf Team, Philanthropy Co-Chair of Alpha Beta Psi Sorority, Luther Athletes Serving Others, Auditor of Iowa Girls State 2010, National Honor Society (Waukee High School)</p>
+            <hr class="hidden-xs">
+          </div>
+
+          <div class="col-md-3 col-sm-4 resume-place wow bounceInRight">
+            <h4><i class="fa fa-suitcase"></i> Luther College</h4>
+            <i class="fa fa-calendar"></i> 2011 - 2015
+            <hr class="visible-xs">
+          </div>
+
+        </div><!-- .row -->
+
+        <div class="row resume-items">
+
+          <div class="col-md-3 wow bounceInLeft">
+            <h3>Experience</h3>
+          </div>
+
+          <div class="col-md-6 col-sm-8 resume-item wow bounceInUp">
+            <h4>Field Experience | "Understanding Entrepreneurship in Silicon Valley"</h4>
+            <p>One of ten students selected to engage in an immersive three-week course of study to visit tech industry innovators and learned about success; daily records kept on my blog <a href="thehtmelle.wordpress.com">here</a></p>
+            <hr class="hidden-xs">
+          </div>
+
+          <div class="col-md-3 col-sm-4 resume-place wow bounceInRight">
+            <h4><i class="fa fa-suitcase"></i> Luther College</h4>
+            <i class="fa fa-calendar"></i> January 2014
+            <hr class="visible-xs">
+          </div>
+
+          <div class="col-md-6 col-md-offset-3 col-sm-8 resume-item wow bounceInUp">
+            <h4>Account Management Intern</h4>
+            <p>Systematically and cooperatiely enter content into multiple bank content management systems with other interns</p>
+            <p>Manage a team of interns in creating a website to display Profiles and Portfolios for full-time Web-team employees</p>
+            <p>Learn enhanced HTML5 and Less.js and understand the benefit of using the newest languages in website development</p>
+            <p>Understand how to navigate Salesforce and efficiently find information about clients through folders and in contracts</p>
+            <hr class="hidden-xs">
+          </div>
+
+          <div class="col-md-3 col-sm-4 resume-place wow bounceInRight">
+            <h4><i class="fa fa-suitcase"></i> Banno/ProfitStars</h4>
+            <i class="fa fa-calendar"></i> May 2014 - Present
+            <hr class="visible-xs">
+          </div>
+
+        </div><!-- .row -->
+
+        <div class="row">
+
+          <div class="col-md-6 col-md-offset-3 wow bounceInUp">
+            <a href="#" class="btn btn-default btn-custom-2"><i class="fa fa-cloud-download icon-before"></i> Download CV</a>
+          </div>
+
+        </div><!-- .row -->
+
+      </div><!-- .container -->
+
+    </section>
+
+    <!-- Resume section end -->
+
+    <!-- Callout section start -->
+
+    <section id="clients" class="callout">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-3 hidden-xs wow bounceInLeft">
+            <h3>Projects</h3>
+          </div>
+
+          <div class="col-md-9 wow bounceInRight">
+
+            <div id="owl-clients" class="owl-carousel">
+              
+              <div class="owl-item">
+                <a href="prime.html"><img src="assets/images/logo/client160-3.png" alt=""></a>
+                <h4>Prime Factorization</h4>
+              </div>
+
+              <div class="owl-item">
+                <a href="wordladder.html"><img src="assets/images/logo/client160-1.png" alt=""></a>
+                <h4>Word Ladder</h4>
+              </div>
+
+              <div class="owl-item">
+                <a href="https://midmash.github.io/"><img src="assets/images/logo/client160-3.png" alt=""></a>
+                <h4>Midterm Mashup</h4>
+              </div>
+
+              <div class="owl-item">
+                <a href="http://skillsconnect.herokuapp.com/"><img src="assets/images/logo/client160-1.png" alt=""></a>
+                <h4>Final Project</h4>
+              </div>
+
+              <div class="owl-item">
+                <a href="http://www.andrewloveselle.com"><img src="assets/images/logo/client160-3.png" alt=""></a>
+                <h4>Wedding Website</h4>
+              </div>
+
+              <div class="owl-item">
+                <img src="assets/images/logo/client160-1.png" alt="">
+                <h4>To be continued...</h4>
+              </div>
+
+            </div>
+
+          </div><!-- .col-md-9 -->
+
+        </div><!-- .row -->
+
+      </div><!-- .container -->
+
+    </section>
+
+    <!-- Callout section end -->
+
+    <!-- Portfolio section start -->
+
+    <section id="portfolio" class="section">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-12 headline wow bounceInDown">
+            <h2>Portfolio</h2>
+            <p>My best works.</p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 wow bounceInLeft">
+            <a href="assets/images/p1.jpg" class="pop-up">
+              <div class="portfolio-item">
+                <div class="portfolio-item-preview">
+                  <img src="assets/images/p1.jpg" alt="">
+                </div>
+                <div class="portfolio-item-description">
+                  <h3>Some work</h3>
+                  <p>Category</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 col-sm-6 wow bounceInUp">
+            <a href="assets/images/p2.jpg" class="pop-up">
+              <div class="portfolio-item">
+                <div class="portfolio-item-preview">
+                  <img src="assets/images/p2.jpg" alt="">
+                </div>
+                <div class="portfolio-item-description">
+                  <h3>Some work</h3>
+                  <p>Category</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 col-sm-6 wow bounceInRight">
+            <a href="assets/images/p3.jpg" class="pop-up">
+              <div class="portfolio-item">
+                <div class="portfolio-item-preview">
+                  <img src="assets/images/p3.jpg" alt="">
+                </div>
+                <div class="portfolio-item-description">
+                  <h3>Some work</h3>
+                  <p>Category</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 col-sm-6 wow bounceInUp" data-wow-delay=".2s">
+            <a href="assets/images/p5.jpg" class="pop-up">
+              <div class="portfolio-item">
+                <div class="portfolio-item-preview">
+                  <img src="assets/images/p5.jpg" alt="">
+                </div>
+                <div class="portfolio-item-description">
+                  <h3>Some work</h3>
+                  <p>Category</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 col-sm-6 wow bounceInUp" data-wow-delay=".4s">
+            <a href="assets/images/p8.jpg" class="pop-up">
+              <div class="portfolio-item">
+                <div class="portfolio-item-preview">  
+                  <img src="assets/images/p8.jpg" alt="">
+                </div>
+                <div class="portfolio-item-description">
+                  <h3>Some work</h3>
+                  <p>Category</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 col-sm-6 wow bounceInUp" data-wow-delay=".6s">
+            <a href="assets/images/p6.jpg" class="pop-up">
+              <div class="portfolio-item">
+                <div class="portfolio-item-preview">
+                  <img src="assets/images/p6.jpg" alt="">
+                </div>
+                <div class="portfolio-item-description">
+                  <h3>Some work</h3>
+                  <p>Category</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div><!-- .row -->
+
+      </div><!-- .container -->
+
+    </section>
+
+    <!-- Portfolio section end -->
+
+    <!-- Contact section start -->
+
+    <section id="contact" class="section">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-12 headline wow bounceInLeft">
+            <h2>Contact Me</h2>
+            <p>Drop me a line or give me a ring.</p>
+          </div>
+
+          <div class="col-md-6 wow bounceInUp">
+
+            <p>Thank you for checking out my site! Feel free to contact me through this form or give me a ring; I look forward to hearing from you!</p>
+
+            <ul class="icon-list">
+              <li><i class="fa fa-fw fa-map-marker"></i>700 College Dr SPO 1137, Decorah, IA 52101</li>
+              <li><i class="fa fa-fw fa-phone"></i>515.401.7985</li>
+              <li><i class="fa fa-fw fa-envelope-o"></i><a href="mailto:">krogis01@luther.edu</a></li>
+              <li><i class="fa fa-fw fa-globe"></i><a href="">http://www.thehtmelle.com</a></li>
+            </ul>
+
+          </div>
+
+          <div class="col-md-6 wow bounceInRight">
+
+            <form id="contact-form" role="form">
+
+              <div class="form-group">
+                <label class="sr-only" for="c_name">Name</label>
+                <input type="text" id="c_name" class="form-control" name="c_name" placeholder="Name">
+              </div>
+
+              <div class="form-group">
+                <label class="sr-only" for="c_email">Email address</label>
+                <input type="email" id="c_email" class="form-control" name="c_email" placeholder="E-mail">
+              </div>
+
+              <div class="form-group">
+                <textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Your message"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-custom-1">
+                <i class="fa fa-bullhorn icon-before"></i> Send it
+              </button>
+
+            </form>
+
+            <div class="ajax-response"></div>
+
+          </div>
+
+        </div><!-- .row -->
+
+      </div><!-- .container -->
+
+    </section>
+
+    <!-- Contact section end -->
+
+    <!-- Footer start -->
+
+    <footer id="footer">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-12">
+            <p class="copy">
+              © 2014 Isabelle Krogh, All Rights Reserved.
+            </p>
+          </div>
+
+        </div><!-- .row -->
+
+      </div><!-- .container -->
+
+    </footer>
+
+    <!-- Footer end -->
+
+  </div><!-- .wrapper -->
+
+  <!-- Javascript files -->
+  <!-- jQuery -->
+  <script src="assets/js/jquery-1.11.0.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Background slider -->
+  <script src="assets/js/jquery.backstretch.min.js"></script>
+  <!-- OwlCarousel -->
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <!-- Modal for portfolio -->
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <!-- Text rotator -->
+  <script src="assets/js/jquery.simple-text-rotator.min.js"></script>
+  <!-- Waypoints -->
+  <script src="assets/js/jquery.waypoints.js"></script>
+  <!-- CountTo  -->
+  <script src="assets/js/jquery.countTo.js"></script>
+  <!-- WOW - Reveal Animations When You Scroll -->
+  <script src="assets/js/wow.min.js"></script>   
+  <!-- Smooth scroll -->
+  <script src="assets/js/smoothscroll.js"></script>
+  <!-- Custom scripts -->
+  <script src="assets/js/custom.js"></script>
+
+</body>
 </html>
