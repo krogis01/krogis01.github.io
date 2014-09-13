@@ -1,19 +1,61 @@
 <html>
 <head>
 <script type="text/javascript" src="prime.js"></script>
-<link rel="stylesheet" href="prime.css" type="text/css">
+
+  <title>Prime Factorization</title>
+
+  <!-- CSS -->
+  <!-- Bootstrap core CSS -->
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+  <link href="prime.css" rel="stylesheet" media="screen">
+
 </head>
 <body>
 
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="container">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/index.html">Isabelle Krogh</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/index.html#profile">About</a></li>
+            <li><a href="/index.html#services">Skills</a></li>
+            <li><a href="/index.html#resume">Resume</a></li>
+            <li><a href="/index.html#portfolio">Portfolio</a></li>
+            <li><a href="/index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+<div class="section">
 <h1>Prime Factorization</h1>
 
 <p>Enter any number for a list of it's prime factors!</p>
 
 <form>
 <p>Input Number Here:</p> <input type="text" id="userinput">
-<button type="button" onclick="checkNewPrimes()">Calculate</button>
+<button type="button" class="btn btn-custom-1" onclick="checkNewPrimes()">Calculate</button>
 <div id="end"> </div>
 </form>
+</div>
+
+
+
 
 </body>
 </html>
