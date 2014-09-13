@@ -2,27 +2,69 @@
 <head>
 <script	type="text/javascript",	src="wordladder.js"></script>
 <script	type="text/javascript",	src="wordlists.js"></script>
-<link rel="stylesheet" href="wordladder.css" type="text/css">
+  
+  <title>Word Ladder</title>
+
+  <!-- CSS -->
+  <!-- Bootstrap core CSS -->
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+  <link rel="stylesheet" href="wordladder.css" media="screen">
+
 </head>
 <body>
+
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="container">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/index.html">Isabelle Krogh</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/index.html#profile">About</a></li>
+            <li><a href="/index.html#services">Skills</a></li>
+            <li><a href="/index.html#resume">Resume</a></li>
+            <li><a href="/index.html#portfolio">Portfolio</a></li>
+            <li><a href="/index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+</nav>
+
+
+<div class="section">
 
 <h1>Word Ladder</h1>
 
 <p>Enter two words of the same length to find a Word Ladder path!</p>
 
 
-<input type="text" id="userBeginWord">
-<input type="text" id="userEndWord">
+<input type="text" class="wordtext" id="userBeginWord">
+<input type="text" class="wordtext" id="userEndWord">
 
-<select id="dropdown" name="Length of Words">
-<option	value="3">3 Letters</option>
-<option	value="4">4 Letters</option>
-<option	value="5">5 Letters</option>
+<select id="dropdown" class="btn btn-custom-1" name="Length of Words">
+<option	value="3"> 3 Letters </option>
+<option	value="4"> 4 Letters </option>
+<option	value="5"> 5 Letters</option>
 </select>
 
-<button type="button" onclick="wordLadder()">Ladder Your Words!</button>
+<button type="button" class="btn btn-custom-1" onclick="wordLadder()">Ladder Your Words!</button>
 
 <div id="results"></div>
+
+</div>
 
 </body>
 </html>
